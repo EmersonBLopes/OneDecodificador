@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+/*reset CSS*/
+*{
+    margin:0;
+    font-size: 100%;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    font-family: 'Inter',sans-serif;
+    font-weight: 400;
+}
+
+:root{
+    --primary-color:#0A3871;
+}
+
+body{
+    background-color:#F3F5FC;
+}
+
+h1{
+    margin: 40px 0 0 84px
+}
+
+input{
+    margin: 168px 0 0 240px;
+    width: 680px;
+    height: 48px;
+    background-color: transparent;
+}
+
+input::placeholder{
+    color:var(--primary-color);
+    font-size: 32px;
+}
+
+i{
+    color:#495057;
+}
+
+span{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color:#495057;
+}
+
+.controle{
+    position: absolute;
+    left: 240px;
+    bottom: 7vh;
+}
+
+#criptografar{
+    margin-top: 16px;
+    margin-right: 24px;
+}
+
+aside{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 92vh;
+    background-color: #fff;
+    border-radius:32px
+}
+
+aside h2{
+    margin: 32px 0 16px 0 ;
+    color: #343A40;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+aside p {
+    color:#343A40;
+    font-size: 16px;
+}
+
+aside #empty_art{
+    width: 336px;
+}
+
+button{
+    background-color: var(--primary-color);
+    color: #fff;
+    width: 328px;
+    padding:24px;
+    border-radius: 24px;
+}
+
+#descriptografar{
+    background-color: 
+    #D8DFE8;
+    color:
+    var(--primary-color);
+    outline: var(--primary-color) solid 1px;
+}
+
+@media(max-width:768px){
+    #empty_art{
+        display: none;
+    }
+    h1{
+        margin: 73px 0 0 40px;
+    }
+    input{
+        margin: 240px 40px 0 40px;
+        width: 688px;
+        height: 48px;
+    }
+    input::placeholder{
+        font-size: 32px;
+    }
+    .controle{
+        margin:548px 40px 0 40px;
+    }
+    .botoes{
+        margin-top: 16px;
+    }
+    .controle #criptografar{
+        margin-right: 24px;
+    }
+    .saida{
+       position: static; 
+       width:688px;
+       height: 133px;
+       margin: 64px 110px 40px 110px;
+       padding: 32px;
+    }
+    .saida h2{
+        margin-bottom: 16px;        
+    }
+}
+
+@media(max-width:375px){
+    #empty_art{
+        display: none;
+    }
+    h1{
+        margin: 24px 0 0 16px;
+    }
+    input{
+        margin: 152px 16px 0 16px;
+        width: 343px;
+        height: 48px;
+    }
+    input::placeholder{
+        font-size: 32px;
+    }
+    .controle{
+        margin:251px 16px 0 16px;
+    }
+    .controle #criptografar{
+        margin: 16px 0 24px 0;
+    }
+    .saida{
+       margin: 64px 5% 40px 5%;
+       padding: 32px;
+    }
+    .saida h2{
+        margin-bottom: 16px;        
+    }
+}
