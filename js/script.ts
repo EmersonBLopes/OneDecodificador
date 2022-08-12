@@ -13,7 +13,6 @@ function escreveSaida(texto:string):void{
 function codificar():void{
     let texto:string = capturaTexto().toLowerCase();
     let novoTexto: string = "";
-    console.log(texto);
     for (let i: number = 0; i < texto.length; i++) {
         switch (texto[i]) {
             case 'e':

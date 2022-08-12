@@ -9,7 +9,6 @@ function escreveSaida(texto) {
 function codificar() {
     var texto = capturaTexto().toLowerCase();
     var novoTexto = "";
-    console.log(texto);
     for (var i = 0; i < texto.length; i++) {
         switch (texto[i]) {
             case 'e':
