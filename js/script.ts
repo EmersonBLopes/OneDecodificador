@@ -6,8 +6,7 @@ function capturaTexto():string{
 function escreveSaida(texto:string):void{
     
     let saida = document.querySelector("aside");
-    saida.innerHTML= "<p>"+texto+"</p>";
-
+    saida.innerHTML= "<textarea rows=\"25\" cols=\"50\" id=\"texto-saida\">"+texto+"</textarea><button onclick=\"copiar()\" id=\"botao-copiar\">Copiar</button>";
 }
 
 function codificar():void{
@@ -109,6 +108,11 @@ function descodificar():void{
     }
     escreveSaida(novoTexto);
     return;
+}
+
+function copiar():void{
+	let textoCopiado = document.getElementById("texto-saida") as HTMLTextAreaElement | null;	
+	navigator.clipboard.writeText(textoCopiado.value);	
 }
 
 

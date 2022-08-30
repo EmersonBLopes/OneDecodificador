@@ -4,7 +4,7 @@ function capturaTexto() {
 }
 function escreveSaida(texto) {
     var saida = document.querySelector("aside");
-    saida.innerHTML = "<p>" + texto + "</p>";
+    saida.innerHTML = "<textarea rows=\"25\" cols=\"50\" id=\"texto-saida\">" + texto + "</textarea><button onclick=\"copiar()\" id=\"botao-copiar\">Copiar</button>";
 }
 function codificar() {
     var texto = capturaTexto().toLowerCase();
@@ -104,6 +104,10 @@ function descodificar() {
     }
     escreveSaida(novoTexto);
     return;
+}
+function copiar() {
+    var textoCopiado = document.getElementById("texto-saida");
+    navigator.clipboard.writeText(textoCopiado.value);
 }
 var botaoCodificar = document.getElementById("criptografar");
 var botaoDescodificar = document.getElementById("descriptografar");

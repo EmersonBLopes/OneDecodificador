@@ -65,7 +65,7 @@ aside{
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 27vw;
+    width: 560px;
     height: 92vh;
     background-color: #fff;
     border-radius:32px
@@ -85,6 +85,11 @@ aside p {
 
 aside #empty_art{
     width: 336px;
+}
+
+aside #botao-copiar{
+	position:absolute;
+	bottom:60px;
 }
 
 button{
