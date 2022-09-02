@@ -22,11 +22,15 @@ h1{
     margin: 40px 0 0 84px
 }
 
-input{
-    margin: 168px 0 0 240px;
-    width: 680px;
-    height: 48px;
+textarea{
+	resize: none;
     background-color: transparent;
+}
+
+#entrada-texto{
+	position: relative;
+	top:100px;
+	left:240px;
 }
 
 input::placeholder{
@@ -62,7 +66,6 @@ aside{
     right: 40px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
     width: 560px;
@@ -71,19 +74,24 @@ aside{
     border-radius:32px
 }
 
+aside .conteudo-aside{
+	margin:auto;
+}
+
 aside h2{
-    margin: 32px 0 16px 0 ;
+    margin: 2em  auto 0.5em;
     color: #343A40;
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: 700;
 }
 
-aside p {
-    color:#343A40;
-    font-size: 16px;
+aside #texto-saida{
+	position: relative;
+	top: 19.5%;
 }
 
 aside #empty_art{
+	margin: auto;
     width: 336px;
 }
 

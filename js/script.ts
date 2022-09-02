@@ -1,12 +1,12 @@
 function capturaTexto():string{
-    let entrada = document.querySelector("input");
+    let entrada = document.getElementById("entrada-texto") as HTMLTextAreaElement | null;
     return entrada.value;
 }
 
 function escreveSaida(texto:string):void{
     
     let saida = document.querySelector("aside");
-    saida.innerHTML= "<textarea rows=\"25\" cols=\"50\" id=\"texto-saida\">"+texto+"</textarea><button onclick=\"copiar()\" id=\"botao-copiar\">Copiar</button>";
+    saida.innerHTML= "<textarea cols=\"50\" rows=\"20\" id=\"texto-saida\">"+texto+"</textarea><button onclick=\"copiar()\" id=\"botao-copiar\">Copiar</button>";
 }
 
 function codificar():void{
