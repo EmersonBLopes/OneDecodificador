@@ -51,7 +51,7 @@ span{
 
 .controle{
     position: absolute;
-    left: 240px;
+    left: 13vw;
     bottom: 7vh;
 }
 
@@ -68,13 +68,15 @@ aside{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 560px;
+    width: 27vw;
+	max-width:940px;
     height: 92vh;
     background-color: #fff;
     border-radius:32px
 }
 
 aside .conteudo-aside{
+	width:100%;
 	margin:auto;
 }
 
@@ -92,7 +94,7 @@ aside #texto-saida{
 
 aside #empty_art{
 	margin: auto;
-    width: 336px;
+    width: 80%;
 }
 
 aside #botao-copiar{
@@ -116,7 +118,7 @@ button{
     outline: var(--primary-color) solid 1px;
 }
 
-@media(max-width:768px){
+@media(max-width:1320px){
     #empty_art{
         display: none;
     }
