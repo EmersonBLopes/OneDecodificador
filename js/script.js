@@ -4,7 +4,7 @@ function capturaTexto() {
 }
 function escreveSaida(texto) {
     var saida = document.querySelector("aside");
-    saida.innerHTML = "<textarea id=\"texto-saida\">" + texto + "</textarea><button onclick=\"copiar()\" id=\"botao-copiar\">Copiar</button>";
+    saida.innerHTML = "<textarea id=\"texto-saida\" class=\"caixa-de-texto\">" + texto + "</textarea><button onclick=\"copiar()\" id=\"botao-copiar\" class=\"botao\">Copiar</button>";
 }
 function codificar() {
     var texto = capturaTexto().toLowerCase();
