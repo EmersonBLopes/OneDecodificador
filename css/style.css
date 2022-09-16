@@ -26,6 +26,7 @@ h1{
 .principal{
 	margin: 40px auto auto;
 	width:90%;
+	max-width: 1920px;
 	display:flex;
 	justify-content:end;
 	gap: 15%;
@@ -40,7 +41,7 @@ h1{
 textarea{
 	resize: none;
 	width: 100%;
-	height: 30%;
+	height: 400px;
     background-color: transparent;
 }
 
@@ -62,7 +63,6 @@ span{
 
 .controle .botoes button{
 	width:48%;
-	min-width:210px;
 	height:100%;
 }
 
@@ -80,14 +80,16 @@ span{
 }
 
 aside{	
-	justify-self:end;
+	box-sizing:border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-	min-width:420px;
-	max-width:720px;
+	max-width:540px;
+	min-width:440px;
+	width:40vw;
     height: 92vh;
+	max-height:1080px;
     background-color: #fff;
     border-radius:32px
 }
@@ -107,6 +109,7 @@ aside h2{
 aside #texto-saida{
 	position: relative;
 	top: 19.5%;
+	width:80%;
 }
 
 aside #empty_art{
@@ -122,11 +125,6 @@ aside #botao-copiar{
 	bottom:60px;
 }
 
-aside textarea{
-	height:62%;
-	width:80%;
-}
-
 button{
     background-color: var(--primary-color);
 	padding:20px;
@@ -135,68 +133,44 @@ button{
 }
 
 
-/*@media(max-width:1320px){
+@media(max-width:1070px){
+	.principal{
+		flex-direction:column;
+		align-items:center;
+	}	
     #empty_art{
         display: none;
     }
     h1{
+		position:static;
         margin: 73px 0 0 40px;
     }
-    input{
-        margin: 240px 40px 0 40px;
-        width: 688px;
-        height: 48px;
-    }
-    input::placeholder{
-        font-size: 32px;
-    }
-    .controle{
-        margin:548px 40px 0 40px;
-    }
+	.entrada{
+		width:100%;
+	}
     .botoes{
         margin-top: 16px;
     }
-    .controle #criptografar{
-        margin-right: 24px;
-    }
     .saida{
        position: static; 
-       width:688px;
-       height: 133px;
-       margin: 64px 110px 40px 110px;
+       width:90vw;
+	   min-width:200px;
+	   height:auto;
+       margin: 64px auto;
        padding: 32px;
     }
-    .saida h2{
-        margin-bottom: 16px;        
-    }
-}*/
 
-@media(max-width:375px){
-    #empty_art{
-        display: none;
-    }
-    h1{
-        margin: 24px 0 0 16px;
-    }
-    input{
-        margin: 152px 16px 0 16px;
-        width: 343px;
-        height: 48px;
-    }
-    input::placeholder{
-        font-size: 32px;
-    }
-    .controle{
-        margin:251px 16px 0 16px;
-    }
-    .controle #criptografar{
-        margin: 16px 0 24px 0;
-    }
-    .saida{
-       margin: 64px 5% 40px 5%;
-       padding: 32px;
-    }
+	.saida	#texto-saida{
+		position: static;
+	}
+
     .saida h2{
         margin-bottom: 16px;        
     }
+	.saida #botao-copiar{
+		position:static; 
+		margin-top: 20px;
+	}
+
 }
+
