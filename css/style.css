@@ -61,9 +61,8 @@ span{
     color:#495057;
 }
 
-.controle .botoes .botao{
+.botao{
 	width:48%;
-	height:100%;
 }
 
 #criptografar{
@@ -174,3 +173,18 @@ span{
 
 }
 
+@media(max-width:480px){
+	#criptografar{
+		margin:10px 0;
+	}
+
+	.botoes{
+		display:flex;
+		flex-direction:column;
+	}
+
+	.botao{
+		width:100%;
+	}
+}
+		
